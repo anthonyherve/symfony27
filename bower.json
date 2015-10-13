@@ -1,0 +1,23 @@
+{
+  "name": "symfony27",
+  "version": "1.0.0",
+  "authors": [
+    "anthonyherve <anthony.herve28@gmail.com>"
+  ],
+  "description": "Symfony 2.7 project",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5"
+  }
+}

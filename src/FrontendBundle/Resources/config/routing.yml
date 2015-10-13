@@ -1,0 +1,3 @@
+common_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CommonBundle:Default:index }
