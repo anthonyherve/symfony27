@@ -12,14 +12,14 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 gulp.task('compile-sass', function (env) {
     if (env == 'prod') {
-        gulp.src('./web/bundles/common/sass/main.scss')
+        gulp.src('./src/FrontendBundle/Resources/public/sass/main.scss')
             .pipe(plumber({errorHandler: onError}))
             .pipe(sass({errLogToConsole: true}))
             .pipe(rename('main.css'))
             .pipe(minifyCss({rebase: false}))
             .pipe(gulp.dest('./web/css/'));
     } else {
-        gulp.src('./web/bundles/common/sass/main.scss')
+        gulp.src('./src/FrontendBundle/Resources/public/sass/main.scss')
             .pipe(plumber({errorHandler: onError}))
             .pipe(sass({errLogToConsole: true}))
             .pipe(rename('main.css'))
